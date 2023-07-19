@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e13a2ba671.js" crossorigin="anonymous"></script>
+</head>
+<body class="h-14 bg-gradient-to-r from-[#C9D9FF] to-[#F89B9E]">
+
+    <div class="flex flex-col  justify-center items-center">
+        <div class="bottom-5 border-4 border-red-500 rounded-full relative top-16">
+            <img class="h-16  rounded-full" src="./download.png" alt="">
+        </div>
+        <section class=" container my-10 mx-auto bg-white  rounded-3xl custom-height w-3/4">
+
+     
+<!-- --------------------
+    header section
+------------------------->
+
+        <header>
+            <div class="">
+                <h1 class="relative top-8 text-center text-3xl font-bold">Welcome Back, Hasan <span>&#128587;&#127995;</span></h1>
+            </div>
+        </header>
+    
+    <main>
+
+<!-- ----------------------------
+    deposite/widthdraw section
+---------------------------------->
+
+
+       <section class="flex justify-center items-center relative top-20 gap-10">
+        <div class="h-3/6 w-1/5
+        p-6 rounded-xl text-white font-semibold text-lg  bg-green-400">
+            <h1>Deposite</h1>
+            <br>
+            <h3>$<span id="depositefield">0</span></h3>
+        </div>
+        <div class="h-3/6 w-1/5
+        p-6 rounded-xl text-white font-semibold text-lg bg-sky-400">
+            <h1>Withdraw</h1>
+            <br>
+            <h3>$<span id="withdrawfield">0</span></h3>
+        </div>
+        <div class="h-3/6 w-1/5
+        p-6 rounded-xl text-white font-semibold text-lg  bg-orange-400">
+            <h1>Total Balance</h1>
+            <br>
+            <h3>$<span id="totalfield">0</span></h3>
+        </div>
+       </section>
+
+ <!-- --------------------
+    enter amount section
+ ------------------------->
+
+       <section class="flex justify-center items-center relative top-40 gap-10 mx-10">
+        
+           <div class="w-2/4 flex justify-center items-center gap-2  h-40 p-2 rounded-xl font-semibold text-lg bg-slate-400" >
+            
+               <!-- deposite area -->
+               <input id="depositeamount" class="w-50 rounded-lg outline-none border-b p-3" placeholder="Enter Amount" type="text">
+            <button id="depositebtn" 
+                class=" text-center px-5 py-3 text-white rounded bg-[#fc575fa2]"> Deposite</button>
+        
+        </div>
+           <div class="w-2/4 flex justify-center items-center gap-2  h-40 rounded-xl font-semibold text-lg  bg-slate-400" >
+            
+               <!-- withdraw area -->
+               <input id="withdrawamount" class="w-50 rounded-lg outline-none border-b p-3" placeholder="Enter Amount" type="text">
+            <button id="withdrawbtn" 
+                class="text-center px-5 py-3 text-white rounded bg-[#fc575fa2]"> Withdraw</button>
+        
+        </div>
+        
+       </section>
+    </main>
+</section>
+
+
+   
+<script src="./userinterface.js"></script>
+</body>
+</html>
